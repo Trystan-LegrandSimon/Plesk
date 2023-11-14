@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Cette balise meta définit l'encodage des caractères de la page comme étant UTF-8, garantissant que les caractères spéciaux et internationaux sont correctement interprétés. -->
+        <meta charset="UTF-8" />
+
+        <!-- La balise meta viewport détermine comment la page est affichée sur les appareils mobiles en spécifiant le niveau de zoom initial (initial-scale=1.0) et la largeur en fonction de la largeur de l'appareil (width=device-width). -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- La balise meta description fournit un résumé concis du contenu de la page pour les moteurs de recherche et les utilisateurs. -->
+        <meta name="description" content="Découvrez un Curriculum Vitae structuré en HTML, mettant en valeur les bonnes pratiques SEO pour améliorer le référencement sur Google. Ce CV présente les compétences en développement web, en cybersécurité informatique et en mécanique automobile. Avec une organisation claire en deux sections - la partie gauche dédiée à la présentation personnelle, compétences et loisirs, et la partie droite à l'objectif professionnel, formations et expériences. Téléchargez la version PDF et explorez le profil GitHub de Trystan LEGRAND-SIMON." />
+
+        <!-- Titre dans l'onglet de la page -->
+        <title>CV - Trystan LEGRAND-SIMON</title>
+
+        <!--  Liaison à ma page CSS = index.css -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Icon dans l'onglet de la page -->
+        <link rel="shortcut icon" href="./assets/icon_cv.png" />
+
+        <!-- Bibliothèque d'icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    </head>
+
+    <body>
+        <main class="container">
+            <section class="section_gauche">
+                <div class="profile_text_gauche">
+                    <div class="img_profile">
+                        <img src="../assets/img_profile.jpg" alt="image de profile">
+                    </div>
+                    <h1>
+                        Trystan
+                        <br>
+                        LEGRAND-SIMON
+                    </h1>
+                </div>
+
+                <div class="profil">
+                    <h2>Contact :</h2>
+
+                    <ul class="profil_list">
+                        <li>
+                            <a
+                                href="mailto:trystan.legrand-simon@laplateforme.io" class="contact" target="_blank"
+                            >
+                                <i class="fas fa-envelope"></i> 
+                                trystan.legrand-simon@laplateforme.io
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                            class="contact"
+                            href="https://maps.app.goo.gl/DK94a9ZBYWhPF5mq5" target="_blank"
+                        >
+                            <i class="fas fa-map-marker-alt"></i>
+                            13600 La Ciotat
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="profil">
+                    <h2>Soft Skills :</h2>
+                    <ul class="profil_list">
+                        <li>Sens de l'hétique</li>
+                            <br>
+                        <li>Organisation <br>et<br> Gestion du temps</li>
+                            <br>
+                        <li>Curiosité</li>
+                        <li>Empathie</li>
+                        <li>Esprit Critique</li>
+                    </ul>
+                </div>
+
+                <div class="profil_competences profil">
+                    <h2>Compétences :</h2>
+                    <ul class="profil_list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Symfony</li>
+                        <li>Laravel</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>NodeJS</li>
+                        <li>Cisco</li>
+                    </ul>
+                </div>
+
+                <div class="profil">
+                    <h2>Loisirs :</h2>
+                    <ul class="profil_list">
+                        <li>Développement <br>et<br> Intégration Web</li>
+                            <br>
+                        <li>CyberSécurité <br> Informatique</li>
+                            <br>
+                        <li>Automobiles <br>&<br> Camions</li>
+                            <br>
+                        <li>Voile</li>
+                        <li>VTT</li>
+                        <li>Photographie</li>
+                        <li>Animaux</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section_droite">
+                <div class="container_projet">
+                    <h2 id="cv">
+                        Administrateur
+                            <br>
+                        Systèmes
+                            <br>
+                        et
+                            <br>
+                        Réseaux
+                    </h2>
+                    <div class="projet_pro">
+                        <h2>Objectif Professionnel :</h2>
+                        <p>
+                            Je cherche à établir une carrière dans le domaine de la cybersécurité avec un objectif précis en tant que pentester en cyber-offensive.
+                            <br>
+                            Mon ambition est de devenir un expert capable d'identifier, évaluer et exploiter les vulnérabilités des systèmes informatiques.
+                            <br>
+                            Mon objectif professionnel est de travailler de manière proactive pour renforcer la sécurité des réseaux et des applications, en utilisant mes compétences techniques pour protéger les infrastructures numériques contre les menaces potentielles.
+                        </p>
+                    </div>
+
+                    <div class="formations">
+                        <h2>Formations :</h2>
+                        <ul>
+                            <li class="formations_list">
+                                Admin Systèmes & Réseaux (Bac+3)
+                                <br>
+                                <span>2023 - 2026 / La Plateforme, Marseille</span>
+                            </li>
+                            <li class="formations_list">
+                                Intégrateur - Développeur Web (Bac+2)
+                                <br>
+                                <span>2022 - 2023 / Web@cadémie EPITECH, Marseille</span>
+                            </li>
+                            <li class="formations_list">
+                                Titre Pro Conducteur Routier sur porteur (FIMO, ADR, CACES R390 Grue Auxiliaire)
+                                <br>
+                                <span>2019 - 2021 / ECF, Marseille - Aubagne</span>
+                            </li>
+                            <li class="formations_list">
+                                CAP Mécanique Automobile
+                                <br>
+                                <span>2015 - 2017 / CFA, IPFM La Seyne/Mer</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experiences">
+                        <h2>Expériences :</h2>
+                        <ul>
+                            <li class="experiences_list">
+                                Plusieurs entreprises :
+                                <br>
+                                <ul>
+                                    <li>Dépanages VL/PL/SPL,</li>
+                                    <li>Levage</li>
+                                </ul>
+                                <span>2021 - 2022 / Marseille - Nice - Monaco</span>
+                            </li>
+
+                            <li class="experiences_list">
+                                Combattant dans la Cavalerie Blindée
+                                <br>
+                                <span>2019 - 2020 / 4ème RCH, Gap</span>
+                            </li>
+
+                            <li class="experiences_list">
+                                Facteur
+                                <br>
+                                <span>2017 - 2018 / La Ciotat</span>
+                            </li>
+
+                            <li class="experiences_list">
+                                Jeune Sapeur Pompier & Cadet SNSM
+                                <br>
+                                <span>2014 - 2016 / La Ciotat - Hyères</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <div class="btn">
+                    <a href="https://github.com/Trystan-LegrandSimon?tab=repositories" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+
+                <div class="btn">
+                    <a href="/fansite/fansite.html" target="_blank">
+                        Aller sur FanSite ➜
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <div class="btn">
+                    <a href="/cv-html-css/cv-pdf/CV.pdf" target="_blank">
+                        Télécharger le CV en PDF...
+                    </a>
+                </div>
+
+                <div class="btn">
+                    <a href="./app-favorites/app-favorites.html" target="_blank">
+                        Aller App Favorites ➜
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

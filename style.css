@@ -1,0 +1,236 @@
+/* ------------------------------- DÉBUT PARAMÈTRES ---------------------------- */
+/* Import de la police d'écriture */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+/* Rénitialisation du CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akaya Telivigala";
+  text-decoration: none;
+  list-style: none;
+}
+/* Enlever la ScrollBar */
+::-webkit-scrollbar {
+  display: none;
+}
+/* ------------------------------- DÉBUT PARAMÈTRES ---------------------------- */
+/* ------------------------------- DÉBUT BASE ---------------------------- */
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-attachment: fixed;
+}
+.container {
+  padding: 5vw 5vw 0 5vw;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+/* ------------------------------- FIN BASE ---------------------------- */
+/* ------------------------------- DÉBUT SECTION GAUCHE ---------------------------- */
+.section_gauche {
+  background-color: #130f40;
+  width: 40%;
+  height: auto;
+  color: #fff;
+  padding: 3vw;
+}
+.profile_text_gauche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.img_profile > img {
+  width: 100%;
+  height: auto;
+  max-width: 10vw;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #000000;
+  transition: 1s;
+}
+.img_profile > img:hover {
+  transform: scale(1.5);
+}
+.profile_text_gauche > h1 {
+  font-size: 3vw;
+  text-align: center;
+  text-shadow: -3px -2px 0px white;
+}
+.contact {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 0.5vh;
+}
+.fas {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.contact:hover {
+  color: blue;
+}
+.profil {
+  margin-top: 20px;
+  border-top: 2px solid gray;
+}
+.profil > h2 {
+  padding-top: 2vh;
+  font-size: 25px;
+}
+.profil_list > li {
+  padding-top: 0.5vh;
+  font-size: 18px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* ------------------------------- FIN SECTION GAUCHE ---------------------------- */
+/* ------------------------------- DÉBUT SECTION DROITE ---------------------------- */
+.section_droite {
+  background-color: #fff;
+  width: 60%;
+  height: auto;
+  padding: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#cv {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: -3px -1px 0px black;
+}
+.projet_pro {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.projet_pro p {
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+.formations {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.experiences {
+  padding-top: 100px;
+}
+.formations ul,
+.experiences ul {
+  padding-left: 50px;
+}
+.section_droite h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: black;
+}
+.section_droite > li {
+  margin-bottom: 15px;
+  color: black;
+}
+.section_droite li span {
+  font-style: italic;
+  color: #777;
+}
+.formations_list,
+.experiences_list {
+  padding-bottom: 20px;
+}
+.formations_list,
+.experiences_list > ul {
+  padding-left: 50px;
+}
+/* ------------------------------- FIN SECTION DROITE ---------------------------- */
+/* ------------------------------- DÉBUT FOOTER ---------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.btn {
+  background-color: #0000FF;
+  border-radius: 1rem;
+  box-shadow: inset 0px 0px 15px 0px #000,0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin: 10px
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  background-color: #0066ff;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 20px 5px #000, 0px 15px 20px -5px rgba(0, 0, 0, 0.3);
+}
+/* ------------------------------- FIN FOOTER ---------------------------- */
+/* ------------------------------- DÉBUT RESPONSIVE ---------------------------- */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .img_profile > img {
+    box-shadow: none;
+  }
+  .profile_text_gauche > h1 {
+    text-shadow: none;
+  }
+  .contact {
+    font-size: 10px;
+  }
+  .fas {
+    font-size: 10px;
+  }
+  .profil > h2,
+  .section_droite h2 {
+    font-size: 20px;
+  }
+  .profil_list > li {
+    font-size: 10px;
+  }
+  #cv {
+    font-size: 30px;
+    text-shadow: none;
+  }
+  .projet_pro {
+    padding-top: 50px;
+  }
+  .projet_pro p {
+    font-size: 10px;
+  }
+  .formations {
+    padding-top: 30px;
+  }
+  .formations ul {
+    padding-left: 10px;
+  }
+  .formations li {
+    font-size: 10px;
+  }
+  .experiences {
+    padding-top: 30px;
+  }
+  .experiences li {
+    font-size: 10px;
+  }
+}
+/* ------------------------------- FIN RESPONSIVE ---------------------------- */
